@@ -1,5 +1,5 @@
--- to create a new database
-CREATE DATABASE crudnodejsmysql;
+-- ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root'
+-- FLUSH PRIVILEGES;
 
 -- to use database
 use crudnodejsmysql;
