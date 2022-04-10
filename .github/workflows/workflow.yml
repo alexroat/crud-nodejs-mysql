@@ -3,6 +3,14 @@ name: CI
 on: [push]
 
 jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install modules
+      run: yarn
+    - name: Run tests
+      run: yarn test
   deploy:
     runs-on: ubuntu-latest
     steps:
