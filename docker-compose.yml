@@ -28,4 +28,6 @@ services:
     depends_on:
         - "db"
     working_dir: /usr/src/app
+    volumes: 
+        - ${PWD}/:/usr/src/app:cached
   
